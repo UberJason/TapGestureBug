@@ -24,6 +24,7 @@
 		96E5EBF12575D10F00066892 /* TapGestureBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapGestureBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5EBF32575D10F00066892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E5EBF42575D10F00066892 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		96E5EC052575D18E00066892 /* TapGestureBug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapGestureBug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		96E5EBDC2575D10E00066892 = {
 			isa = PBXGroup;
 			children = (
+				96E5EC052575D18E00066892 /* TapGestureBug.entitlements */,
 				96E5EBE12575D10E00066892 /* Shared */,
 				96E5EBEB2575D10F00066892 /* iOS */,
 				96E5EBF22575D10F00066892 /* macOS */,
@@ -320,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TapGestureBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				ENABLE_PREVIEWS = YES;
@@ -332,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.TapGestureBug;
 				PRODUCT_NAME = TapGestureBug;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TapGestureBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GPQ8GE99T;
 				ENABLE_PREVIEWS = YES;
@@ -354,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.TapGestureBug;
 				PRODUCT_NAME = TapGestureBug;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
