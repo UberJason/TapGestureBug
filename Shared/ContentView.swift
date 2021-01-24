@@ -15,8 +15,23 @@ struct ContentView: View {
     @State private var blueOn = false
     @State private var orangeOn = false
     
+    @State private var stringToEdit = ""
+    @State private var anotherStringToEdit = ""
+    
     var body: some View {
-        HStack {
+        VStack {
+            
+            TextField("Focus on me please", text: self.$stringToEdit)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .border(Color.red)
+                .accessibility(identifier: "focus1")
+            
+            
+            TextField("try focus on me", text: self.$anotherStringToEdit)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .border(Color.red)
+                .accessibility(identifier: "focus2")
+            
             Rectangle()
                 .fill(Color.green)
                 .opacity(greenOn ? 1.0 : 0.5)
